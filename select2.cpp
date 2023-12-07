@@ -10,19 +10,19 @@ using namespace std;
 int main()
 {
 
-	float rectangleLength = 0
-	float rectangleWidth = 0
+	float rectangleLength = 0; //missing some syntax
+	float rectangleWidth = 0;
 	float circleRadius = 0;
 	float cylinderHeight = 0;
 	float cylinderRadius = 0;
 
 	cout << "please input your shape." << endl;
 
-	int input = "placeholder";
+	string input = "placeholder"; //make this a string, int can't store words
 
 	cin >> input; cout << endl;
 
-	if (input == "rectangle")
+	if (input == "rectangle"or input == "Rectangle") //let's clean up the code to account for capitals
 	{
 		
 		cout << "What is the length?" << endl;
@@ -40,10 +40,10 @@ int main()
 
 	else 
 	{
-		
+		if (input == "circle" or input == "Circle") //missing an "if" statement
 		{
 			
-			cout < "What is the radius?" << endl;
+			cout << "What is the radius?" << endl; //another syntax error
 
 			cin >> circleradius; cout << endl;
 
@@ -58,6 +58,7 @@ int main()
 
 			if (input == "cylinder" or input == "Cylinder")
 			{
+				
 				cout << "What is the height?" << endl;
 
 				cin >> cylinderHeight; cout << endl;
