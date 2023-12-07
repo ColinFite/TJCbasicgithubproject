@@ -18,7 +18,7 @@ int main()
 
 	cout << "please input your shape." << endl;
 
-	string input = "placeholder";
+	int input = "placeholder";
 
 	cin >> input; cout << endl;
 
